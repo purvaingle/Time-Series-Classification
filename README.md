@@ -53,7 +53,7 @@ In case of class imbalance, which could result in some folds lacking any instanc
 
 4. I repeated 2(c)(1) using a Naïve Bayes' classifier, employing both Gaussian and Multinomial priors. I then compared the results obtained with each type of prior.
 
-5. To determine which method is better for multi-class classification in this problem, I assessed the performance metrics, such as accuracy, precision, recall, and F1-score, for both the L1-penalized multinomial regression model and the Naïve Bayes' classifier with both Gaussian and Multinomial priors. Based on these metrics, I concluded which method provided better classification results for the specific problem at hand.
+5. Looking at the AUC of the ROC curves of the testing data for the L1- penalized multinomial regression model, Naive Bayes’ classifier using Gaussian, and Multinomial priors we can see that the AUC of the Naive Bayes’ classifier using Gaussian priors is the highest compared to the other two. The larger the AUC the better the classifier. It also has the lowest test error. Hence, the Naive Bayes’ classifier using Gaussian priors works better for multi-class classification as compared to the other two in this problem.
 
 
 
