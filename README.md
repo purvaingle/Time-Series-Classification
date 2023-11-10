@@ -44,6 +44,18 @@ In case of class imbalance, which could result in some folds lacking any instanc
 
 7. Upon inspecting the confusion matrices, I noticed imbalanced classes. In response, I built a logistic regression model based on case-control sampling and adjusted its parameters accordingly. I then reported the confusion matrix, ROC curve, and AUC score of the model.
 
+(b) Binary Classification Using L1-penalized logistic regression:
+
+1. I repeated 2(a)(3) using L1-penalized logistic regression. This involved replacing the use of p-values for variable selection with L1 regularization. I had to cross-validate for both (l), the number of time series into which I broke each of my instances, and (lambda), the weight of the L1 penalty in the logistic regression objective function (or C, the budget).
+
+2. Compared the L1-penalized with variable selection using p-values.
+
+3. To find the best l for building an L1-penalized multinomial regression model to classify all activities in the training set, I followed the same procedure as in 2(b)(1). After obtaining the best l, I reported the test error. 
+
+4. I repeated 2(c)(1) using a Naïve Bayes' classifier, employing both Gaussian and Multinomial priors. I then compared the results obtained with each type of prior.
+
+5. To determine which method is better for multi-class classification in this problem, I assessed the performance metrics, such as accuracy, precision, recall, and F1-score, for both the L1-penalized multinomial regression model and the Naïve Bayes' classifier with both Gaussian and Multinomial priors. Based on these metrics, I concluded which method provided better classification results for the specific problem at hand.
+
 
 
 
