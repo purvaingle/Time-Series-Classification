@@ -2,7 +2,8 @@
 An interesting task in machine learning is classification of time series. Here, I have classified the activities of humans based on time series obtained by a Wireless Sensor Network. 
 
 ## Dataset used:  
-AReM data: https://archive.ics.uci.edu/datasets
+AReM dataset was downloaded from: https://archive.ics.uci.edu/datasets
+The dataset comprises seven folders, each corresponding to a different type of activity. Within these folders are numerous files, where each file captures a moment of a person engaging in one of the activities. Every file consists of six time series, all of which are derived from the same individual's activities. The dataset encompasses 88 such instances, with each instance containing six time series. Furthermore, each time series consists of 480 sequential values.
 
 ## Tasks Performed: 
 ### Part 1:  Feature Creation/Extraction
